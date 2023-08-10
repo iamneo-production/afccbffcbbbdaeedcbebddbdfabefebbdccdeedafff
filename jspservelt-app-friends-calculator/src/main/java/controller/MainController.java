@@ -70,7 +70,7 @@ public static int calculate(String myName, String friendName) {
 		f2 += (int)friendName.charAt(i);
 	}
 
-	FRIENDS = (f1 + f2) % 100;
+	// FRIENDS = (f1 + f2) % 100;
 	return FRIENDS;
 }
 	
