@@ -1,56 +1,61 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<?xml version="1.0"?>
 
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
 
-  <modelVersion>4.0.0</modelVersion>
+<modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.servletapp</groupId>
+<groupId>com.servletapp</groupId>
 
-  <artifactId>jspservlet-app-ATM</artifactId>
+<artifactId>jspservelt-app-friends-calculator</artifactId>
 
-  <packaging>war</packaging>
+<packaging>war</packaging>
 
-  <version>0.0.1-SNAPSHOT</version>
+<version>0.0.1-SNAPSHOT</version>
 
-  <name>jspservlet-app-ATM Maven Webapp</name>
+<name>jspservelt-app-friends-calculator Maven Webapp</name>
 
-  <url>http://maven.apache.org</url>
+<url>http://maven.apache.org</url>
 
-  <properties>
 
-    <maven.compiler.source>1.8</maven.compiler.source>
+-<properties>
 
-    <maven.compiler.target>1.8</maven.compiler.target>
+<maven.compiler.source>1.8</maven.compiler.source>
 
-  </properties>
+<maven.compiler.target>1.8</maven.compiler.target>
 
-  <dependencies>
+</properties>
 
-    <dependency>
 
-      <groupId>junit</groupId>
+-<dependencies>
 
-      <artifactId>junit</artifactId>
 
-      <version>3.8.1</version>
+-<dependency>
 
-      <scope>test</scope>
+<groupId>junit</groupId>
 
-    </dependency>
+<artifactId>junit</artifactId>
 
-    <dependency>
+<version>3.8.1</version>
 
-      <groupId>javax.servlet</groupId>
+<scope>test</scope>
 
-      <artifactId>servlet-api</artifactId>
+</dependency>
 
-      <version>2.5</version>
 
-      <scope>provided</scope>
+-<dependency>
 
-    </dependency>
+<groupId>javax.servlet</groupId>
 
-    <dependency>
+<artifactId>servlet-api</artifactId>
+
+<version>2.5</version>
+
+<scope>provided</scope>
+
+</dependency>
+
+
+-<dependency>
 
 <groupId>junit</groupId>
 
@@ -62,92 +67,97 @@
 
 </dependency>
 
-    <dependency>
 
-      <groupId>javax.servlet</groupId>
+-<dependency>
 
-      <artifactId>javax.servlet-api</artifactId>
+<groupId>javax.servlet</groupId>
 
-      <version>3.0.1</version>
+<artifactId>javax.servlet-api</artifactId>
 
-      <scope>provided</scope>
+<version>3.0.1</version>
 
-    </dependency>
+<scope>provided</scope>
 
-    <dependency>
+</dependency>
 
-      <groupId>javax.servlet.jsp</groupId>
 
-      <artifactId>jsp-api</artifactId>
+-<dependency>
 
-      <version>2.1</version>
+<groupId>javax.servlet.jsp</groupId>
 
-      <scope>provided</scope>
+<artifactId>jsp-api</artifactId>
 
-    </dependency>
+<version>2.1</version>
 
-    <dependency>  
+<scope>provided</scope>
 
-      <groupId>javax</groupId>    
+</dependency>
 
-      <artifactId>javaee-web-api</artifactId>    
 
-      <version>7.0</version> <!-- Put here the version of your Java EE app, in my case 7.0 -->
+-<dependency>
 
-      <scope>provided</scope>
+<groupId>javax</groupId>
 
-    </dependency>
+<artifactId>javaee-web-api</artifactId>
 
-    <dependency>
+<version>7.0</version>
 
-      <groupId>javax.servlet.jsp.jstl</groupId>
+<scope>provided</scope>
 
-      <artifactId>javax.servlet.jsp.jstl-api</artifactId>
+</dependency>
 
-      <version>1.2.2</version>
 
-    </dependency>
+-<dependency>
 
-    <dependency>
+<groupId>javax.servlet.jsp.jstl</groupId>
 
-      <groupId>javax.servlet</groupId>
+<artifactId>javax.servlet.jsp.jstl-api</artifactId>
 
-      <artifactId>jstl</artifactId>
+<version>1.2.2</version>
 
-      <version>1.2</version>
+</dependency>
 
-    </dependency>
 
-  </dependencies>
+-<dependency>
 
-  <build>
+<groupId>javax.servlet</groupId>
 
-    <finalName>jspservlettest</finalName>
+<artifactId>jstl</artifactId>
 
-    <plugins>
+<version>1.2</version>
 
-        <plugin>
+</dependency>
 
-    <groupId>org.apache.tomcat.maven</groupId>
+</dependencies>
 
-    <artifactId>tomcat7-maven-plugin</artifactId>
 
-    <version>2.2</version>
+-<build>
 
-    <configuration>
+<finalName>jspservlettest</finalName>
 
-    <port>8080</port>
 
-    </configuration>
+-<plugins>
 
-        </plugin>
 
- 
+-<plugin>
 
-    </plugins>
+<groupId>org.apache.tomcat.maven</groupId>
 
-  </build>
+<artifactId>tomcat7-maven-plugin</artifactId>
 
- 
+<version>2.2</version>
+
+
+-<configuration>
+
+<port>8080</port>
+
+</configuration>
+
+</plugin>
+
+</plugins>
+
+</build>
 
 </project>
