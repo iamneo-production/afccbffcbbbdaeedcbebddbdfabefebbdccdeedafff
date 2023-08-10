@@ -60,9 +60,7 @@ public static int findSum(int num){
 	return sum;
 }
 public static int calculate(String myName, String friendName) {
-	int f1 = 0;
-	int f2 = 0;
-	int FRIENDS=0;
+	int f1 = 0,f2 = 0, FRIENDS;
 	for(int i = 0;i<myName.length();i++){
 		f1 += (int)myName.charAt(i);
 	}
@@ -70,27 +68,8 @@ public static int calculate(String myName, String friendName) {
 		f2 += (int)friendName.charAt(i);
 	}
 
-	// FRIENDS = (f1 + f2) % 100;
+	FRIENDS = (f1 + f2) % 100;
 	return FRIENDS;
 }
 	
-// public static int calculate(String myName, String friendName) {
-// 	if (myName == null || friendName == null) {
-// 		throw new IllegalArgumentException("Names cannot be null");
-// 	}
-
-// 	int f1 = calculateAsciiSum(myName);
-// 	int f2 = calculateAsciiSum(friendName);
-
-// 	int FRIENDS = (f1 + f2) % 100;
-// 	return FRIENDS;
-// }
-
-// private static int calculateAsciiSum(String name) {
-// 	int sum = 0;
-// 	for (int i = 0; i < name.length(); i++) {
-// 		sum += (int) name.charAt(i);
-// 	}
-// 	return sum;
-// }
 }
