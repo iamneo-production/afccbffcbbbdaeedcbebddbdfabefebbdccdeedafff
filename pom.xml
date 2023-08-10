@@ -1,4 +1,15 @@
-<?xml version="1.0"?>
+[{
+	"resource": "/home/coder/project/workspace/pom.xml",
+	"owner": "_generated_diagnostic_collection_name_#2",
+	"code": "0",
+	"severity": 8,
+	"message": "Project build error: Non-parseable POM /home/coder/project/workspace/pom.xml: only whitespace content allowed before start tag and not - (position: START_DOCUMENT seen <?xml version=\"1.0\"?>\\n\\n-... @3:2) ",
+	"source": "Java",
+	"startLineNumber": 3,
+	"startColumn": 2,
+	"endLineNumber": 3,
+	"endColumn": 2
+}]
 
 -<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
 
