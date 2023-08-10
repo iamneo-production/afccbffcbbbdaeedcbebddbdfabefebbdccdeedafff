@@ -60,7 +60,9 @@ public static int findSum(int num){
 	return sum;
 }
 public static int calculate(String myName, String friendName) {
-	int f1 = 0,f2 = 0, FRIENDS;
+	int f1 = 0;
+	int f2 = 0;
+	int FRIENDS=0;
 	for(int i = 0;i<myName.length();i++){
 		f1 += (int)myName.charAt(i);
 	}
