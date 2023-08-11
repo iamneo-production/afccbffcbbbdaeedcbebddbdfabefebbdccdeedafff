@@ -10,7 +10,10 @@
   <properties>
   <maven.compiler.source>1.8</maven.compiler.source>
   <maven.compiler.target>1.8</maven.compiler.target>
-  </properties>
+    <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+</properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -24,18 +27,18 @@
       <version>2.5</version>
       <scope>provided</scope>
     </dependency>
-     <dependency>
-<groupId>junit</groupId>
-<artifactId>junit</artifactId>
-<version>4.13.2</version>
-<scope>test</scope>
-</dependency>
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
       <version>3.0.1</version>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+<groupId>junit</groupId>
+<artifactId>junit</artifactId>
+<version>4.13.2</version>
+<scope>test</scope>
+</dependency>
     <dependency>
       <groupId>javax.servlet.jsp</groupId>
       <artifactId>jsp-api</artifactId>
@@ -45,7 +48,7 @@
     <dependency>  
       <groupId>javax</groupId>    
       <artifactId>javaee-web-api</artifactId>    
-      <version>7.0</version>
+      <version>7.0</version> <!-- Put here the version of your Java EE app, in my case 7.0 -->
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -70,6 +73,9 @@
     <port>8080</port>
     </configuration> 
         </plugin>
+ 
     </plugins>
   </build>
+  </properties>
+
 </project>
